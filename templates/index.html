@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Rahul Jha's Diary</title>
+    <link rel="stylesheet" href="tufte.css"/>
+    <link rel="stylesheet" href="latex.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <article>
+      <h1 id="tufte-css">A (Public) Diary</h1>
+      <p class="subtitle">Rahul Jha</p>
+      <section>
+        <p>Welcome to my public journal &mdash; a place for essays that don't quite belong on my blog, but deserve a home of some sort online. Feel free to read and enjoy these random thoughts, and take away from them what you wish!</p>
+      </section>
+
+      <section>
+        <h2 id="fundamentals">Thoughts & Musings</h2>
+        <h3 id="fundamentals--sections-and-headers">A collection of hand-written essays by Kenneth Reitz.</h3>
+        <ul>
+        {% for entry in entries %}
+          <li><a href="/entry/{{ entry.slug }}">{{ entry.title }}</a>.</li>
+        {% endfor %}
+        </ul>
+      </section>
+      <section>
+        <p>This journal is a (slightly) modified version of <a href="https://github.com/kennethreitz/journal">Kenneth Reitz's Journal </a> - The code is <a href="https://github.com/RJ722/diary">available on GitHub</a>.</p>
+      </section>
+
+    </article>
+
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '5919fc7d7218b5071d0312f5');
+    t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+    t.src = 'https://d36ee2fcip1434.cloudfront.net/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+
+  </body>
+</html>
